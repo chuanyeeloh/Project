@@ -171,10 +171,9 @@
     <body>
         <div class="flex-center position-ref full-height">
             <div class="top-right links">
-                <a href="welcome">Home</a>
-                <a href="documentation">Documentation</a>
-                <a href="rooms">Rooms</a>
-                <a href="reservation">Reservation</a>
+                <a href="{{ url('/welcome') }}">Home</a>
+                <a href="{{ url('/rooms') }}">Rooms</a>
+                <a href="{{ url('/reservation')}}">Reservation</a>
                
                 <!-- <a href="{{ route('login') }}">Login</a> -->
             </div>

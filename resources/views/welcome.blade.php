@@ -91,7 +91,7 @@
                         <a href="{{ url('/documentation') }}">Documentation</a>
                         <a href="{{ url('/rooms') }}">Rooms</a>
                         <a href="{{ url('/reservation') }}">Reservations</a>
-                        <a href="{{ route('login') }}">Login</a>
+                        
                     @else
                     <a href="{{ route('login') }}">Login</a>
                     <!-- <a href="welcome">Home</a>

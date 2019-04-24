@@ -197,9 +197,8 @@
             <div class="top-right links">
                 <a href="welcome">Home</a>
                 <a href="documentation">Documentation</a>
-                <a href="rooms">Rooms</a>
                 <a href="reservation">Reservation</a>
-                <a href="{{ route('login') }}">Login</a>
+                
             </div>
             <form action="{{url('reservation/rsv')}}" method="post" role="search">
             {{ csrf_field()}}
@@ -242,14 +241,12 @@
              </form>
              @if(isset($details))
              @foreach($details as $list)
-             <div name="list" style="width: 620px; height:80px; border: 1px solid black; margin:auto; padding: 10px;">
-                <div>
-                    {{ $list }}
-                </div>
+                <div style="text-align:center; border: 1px solid black; width: 10%; margin:auto; "><?php echo 'Booked';  ?></div>
+                @break
              </div>
             @endforeach
             @else 
-                <?php echo 'empty'; ?>
+            <div style="text-align:center; border: 1px solid black; width: 10%; margin:auto; "><?php echo 'Empty';  ?></div>
             @endif
             <div class="header">
                 ROOMS & SUITES
